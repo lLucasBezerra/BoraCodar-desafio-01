@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Player de Música</title>
 </head>
 <body>
@@ -17,26 +18,84 @@
                     <h1>Acorda Devinho</h1>
                     <p>Banda Rocketseat</p>
                 </div>
-            </div>
-        </div>
+                
+                <div class="controls">
+                    <div class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M10.1,114.5,99.3,57.2A16,16,0,0,1,124,70.7v42.6l87.3-56.1A16,16,0,0,1,236,70.7V185.3a16.1,16.1,0,0,1-8.3,14.1,16.5,16.5,0,0,1-16.4-.6L124,142.7v42.6a16.1,16.1,0,0,1-8.3,14.1,16.5,16.5,0,0,1-16.4-.6L10.1,141.5a16.1,16.1,0,0,1,0-27Z"></path></svg>
+                    </div>
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path></svg>
+                    </div>
+                    <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M253.2,128a16,16,0,0,1-7.3,13.5l-89.2,57.3A16,16,0,0,1,132,185.3V142.7L44.7,198.8A16,16,0,0,1,20,185.3V70.7A16,16,0,0,1,44.7,57.2L132,113.3V70.7a16,16,0,0,1,24.7-13.5l89.2,57.3A16,16,0,0,1,253.2,128Z"></path></svg>
+                    </div>
+                </div>
 
-        <div id="player-2" class="player">
-            <div class="wrapper">
-                <!-- <img src="./assets/img-1.jpg" alt="capa de uma imagem fictícia"> -->
-                <div class="info">
-                    <h1>Acorda Devinho</h1>
-                    <p>Banda Rocketseat</p>
+                <div class="track-time">
+                    <div class="track"></div>
+                    <div class="time">
+                        <div class="total-time">03:20</div>
+                        <div class="last-time">12:20</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="player-3" class="player">
+        <div id="player-2" class="player horizontal">
             <div class="wrapper">
-                <!-- <img src="./assets/img-1.jpg" alt="capa de uma imagem fictícia"> -->
-                <div class="info">
-                    <h1>Acorda Devinho</h1>
-                    <p>Banda Rocketseat</p>
+                <div class="info-wrapper">
+                    <img src="./assets/img-1.jpg" alt="capa de uma imagem fictícia">
+                    <div class="info">
+                        <h1>Acorda Devinho</h1>
+                        <p>Banda Rocketseat</p>                    
+                    </div>
                 </div>
+                
+                <div class="controls">
+                    <div class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M10.1,114.5,99.3,57.2A16,16,0,0,1,124,70.7v42.6l87.3-56.1A16,16,0,0,1,236,70.7V185.3a16.1,16.1,0,0,1-8.3,14.1,16.5,16.5,0,0,1-16.4-.6L124,142.7v42.6a16.1,16.1,0,0,1-8.3,14.1,16.5,16.5,0,0,1-16.4-.6L10.1,141.5a16.1,16.1,0,0,1,0-27Z"></path></svg>
+                    </div>
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path></svg>
+                    </div>
+                    <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M253.2,128a16,16,0,0,1-7.3,13.5l-89.2,57.3A16,16,0,0,1,132,185.3V142.7L44.7,198.8A16,16,0,0,1,20,185.3V70.7A16,16,0,0,1,44.7,57.2L132,113.3V70.7a16,16,0,0,1,24.7-13.5l89.2,57.3A16,16,0,0,1,253.2,128Z"></path></svg>
+                    </div>
+                </div>
+
+                <div class="track-time">
+                    <div class="track"></div>
+                    <div class="time">
+                        <div class="total-time">03:20</div>
+                        <div class="last-time">12:20</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="player-3" class="player horizontal">
+            <div class="wrapper">
+                <div class="info-wrapper">
+                    <img src="./assets/img-1.jpg" alt="capa de uma imagem fictícia">
+                    <div class="info">
+                        <h1>Acorda Devinho</h1>
+                        <p>Banda Rocketseat</p>                    
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M10.1,114.5,99.3,57.2A16,16,0,0,1,124,70.7v42.6l87.3-56.1A16,16,0,0,1,236,70.7V185.3a16.1,16.1,0,0,1-8.3,14.1,16.5,16.5,0,0,1-16.4-.6L124,142.7v42.6a16.1,16.1,0,0,1-8.3,14.1,16.5,16.5,0,0,1-16.4-.6L10.1,141.5a16.1,16.1,0,0,1,0-27Z"></path></svg>
+                    </div>
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M232.3,114.3,88.3,26.4a15.5,15.5,0,0,0-16.1-.3A15.8,15.8,0,0,0,64,40V216a15.8,15.8,0,0,0,8.2,13.9,15.5,15.5,0,0,0,16.1-.3l144-87.9a16,16,0,0,0,0-27.4Z"></path></svg>
+                    </div>
+                    <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M253.2,128a16,16,0,0,1-7.3,13.5l-89.2,57.3A16,16,0,0,1,132,185.3V142.7L44.7,198.8A16,16,0,0,1,20,185.3V70.7A16,16,0,0,1,44.7,57.2L132,113.3V70.7a16,16,0,0,1,24.7-13.5l89.2,57.3A16,16,0,0,1,253.2,128Z"></path></svg>
+                    </div>
+                </div>
+
             </div>
         </div>
 

@@ -30,11 +30,19 @@ body *{
     border-radius: 10px;
 
 }
-.info{
-    display: grid;
-    gap: 9.6px;
+.player img{
+    width: 84px;
+    height: 84px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.info-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 .info h1{
+    margin-bottom: 10px;
     font-size: 24px;
     color: #E1E1E6;
 }
@@ -55,6 +63,7 @@ body *{
 #player-1 img{
     width: 190px;
     height: 190px;
+    border-radius: 6px;
     object-fit: cover;
 }
 #player-1 .info{
@@ -68,3 +77,60 @@ body *{
 #player-3{
     grid-area: C;
 }
+/* --- */
+ .controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+ }
+ .horizontal .controls{
+    padding-inline: 58px;
+ }
+ 
+ .track{
+    margin-top: 28px;
+    position: relative;
+ }
+ .track::before{
+    position: absolute;
+
+    content: "";
+    height: 6px;
+    width: 100%;
+    display: block;
+    background-color: #D9D9D9;
+    opacity: 30%;
+    border-radius: 10px;
+ }
+ .track::after{
+    content: "";
+    height: 6px;
+    width: 80%;
+    display: block;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+ }
+ .time{
+    font-size: 14px;
+    color: #C4C4CC;
+    opacity: 70%;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+ }
+ @media (max-width:480px) {
+    #app{
+        display: flex;
+        flex-direction: column;
+        max-width: 270px;
+        margin: auto;
+
+        height: auto;
+        padding-block: 60px;
+    }
+    .horizontal .controls{
+        padding-inline: 30px;
+    }
+ }
+ 
